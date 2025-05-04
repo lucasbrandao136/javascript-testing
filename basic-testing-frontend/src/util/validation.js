@@ -4,8 +4,8 @@ export function validateStringNotEmpty(value) {
   }
 }
 
-export function validateNumber(number) {
-  if (isNaN(number) || typeof value !== 'number') {
+export function validateNumber(value) {
+  if (isNaN(value) || typeof value !== 'number') {
     throw new Error('Invalid number input.');
   }
 }
