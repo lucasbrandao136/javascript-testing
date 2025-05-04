@@ -1,11 +1,11 @@
 export function validateStringNotEmpty(value) {
-  if (value.trim().length === 0) {
+  if (value.trim().length === 0 || typeof value !== 'string') {
     throw new Error('Invalid input - must not be empty.');
   }
 }
 
 export function validateNumber(number) {
-  if (isNaN(number)) {
+  if (isNaN(number) || typeof value !== 'number') {
     throw new Error('Invalid number input.');
   }
 }
